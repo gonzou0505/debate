@@ -1,24 +1,51 @@
-# README
+### Memo
+- Server 立ち上げ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```bash
+$ bundle exec rails s
+```
 
-Things you may want to cover:
+- server シャットダウン
 
-* Ruby version
+Ctr 押しながらCボタン(ターミナルで)
 
-* System dependencies
+---
 
-* Configuration
+- 囲むやつ
+```bash
+```
 
-* Database creation
+- serverURL
 
-* Database initialization
+[server](http://localhost:3000/)
 
-* How to run the test suite
+- gitの変更
 
-* Services (job queues, cache servers, search engines, etc.)
+1. command S
+2. サイドバーのsource controlを押す
+3. changesの＋ボタンを押す
+4. messageをかく
+5. command押しながらEnter
+6. source controlの欄の点三つのやつを押してpushを選択
 
-* Deployment instructions
+---
 
-* ...
+1. config/routes.rbにアクセス
+```rb
+get 'welcome/index'
+```
+2. これはwelcomeコントローラーのindexメソッドにとぶ
+
+3. indexメソッドの処理をした後にviewを呼び出す。
+
+viewは`app/views/コントローラー名/メソッド名.html.erb`を呼び出す。
+
+この場合は`app/views/welcome/index.html.erb`
+
+---
+- aタグ
+
+```
+<a href="URL">表示文字</a>
+```
+
